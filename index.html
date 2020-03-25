@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Öland</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#header">
+          <img id="header-img"
+            src="https://lh3.googleusercontent.com/TCDv8NPX9UsctCnULQwiwB_nlwne8fVc7qxcy50SdThbe1FkMUaNxkNNFvMAFf5fmrxMiVGwaKQeYtrKxZl1-M1Tm8-DoZxcRQYUSHq4QDhM3StQbzxOchTeiJK46CjYXjHTrUuYapm572-Zh4cHWQyBudnUZq9dXqXCE6LrJti3hNDCIaFiZTsYP7xX4ivegwee4fmeMBxjqx_5fAhnbkfTE397KAbOPez3ErSCz8XkKLUfNsnJqaZqxg8GUWtIl3xemEAP2Ydg9-fW33Wabd1K1XmgGTVfe7FcT4_Si6_pEYzhXMq9h6eWR9fdroXVyfXpR4tmIz6lVG-0BZAqoTQhK-Eoj683ZPMjSLCmS81ydAFc_73TAZovnY6SaOWpGlc9p-nSsOvVEZeMv31CPJ_pdhGIMAyobqFWJSBD0lOdGM_Ivlz4TEj2gnVNH-spTSmG7iHuMULIlWaviUYsi50boMyJMLutbtFGdj3w-NHPm8L2xQRIrn1wXVNm2kt-OPJPW-B-P_-94_Z7Fy_iTCssSYQzW0ByS8Ilg2ykafCRQ-VEF4Ycp7-NqCa1bHA7DpGwC6F74G3tjdSqcpgwsRh06Ta0VlpiMarRcqmKI6LDDZpCE_XLrYY-C3WaDX9qB2Dmmx1bYFNZQKQpAIbYgJ70hSyw2EyDoIOWgHt4aSC6_FlnITtg8kc=w971-h683-no"
+            height="30px" alt="">Öland</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#header">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#watch">Video</a>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#header"><i class="fas fa-user-plus"></i> Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form"><i class="fas fa-user"></i> Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <div id="row" class="row">
+        <div class="col-lg-12">
+          <div id="content">
+            <h1 id="title">Öland</h1>
+            <h3>Swedish windmills island.</h3>
+            <hr>
+            <button class="btn btn-outline-light"><i class="fas fa-chess-rook"></i> Discover</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="watch" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Öland sneak peak</h1>
+      <p class="lead">Video by <a id="name" href="https://www.youtube.com/channel/UCbhDd771ipq7oxmJTLqK3Xw">Anders
+          Olofsson</a></p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/bA1M9zddWxo"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 id="subtext">Want to subscribe? Leave your email.</h2> <br>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <div class="form-group my-auto justify-content-center">
+        <label for="exampleInputEmail1">Email address</label>
+        <input name="email" id="email" type="email" class="form-control" id="exampleInputEmail1"
+          aria-describedby="emailHelp" placeholder="Enter your email address" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+          else.</small>
+      </div>
+      <br>
+      <input id="submit" type="submit" value="Submit" class="btn btn-primary" />
+    </form>
+  </div>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 This is my exercise for freeCodeCamp certification,
+      <a href="https://daiellg.github.io/daiellg"> @daiellg</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
